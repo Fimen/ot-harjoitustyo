@@ -1,0 +1,120 @@
+commit fb9ff127be09c1e5cbdfcc51977c02b85fa78f12
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Mar 23 21:48:08 2021 +0200
+
+    poistoa
+
+ toinen.txt | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 03ce6b8801d7e0461435e20160afaff77e3144bb
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Mar 23 21:45:01 2021 +0200
+
+    muutoksia
+
+ eka.txt    | 1 +
+ toinen.txt | 2 ++
+ 2 files changed, 3 insertions(+)
+
+commit fa25fad4defc758b535bbdb6979161b1c15b3d6c
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:53:47 2020 +0200
+
+    uusi muutos
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit ca1903dc0862245b72b0d65364afc31c32ae4e21
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:52:37 2020 +0200
+
+    nimeämispoisto
+
+ tiedosto.txt | 13 -------------
+ 1 file changed, 13 deletions(-)
+
+commit e493275161c413d58920ca3853104d1dceff4b98
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:52:07 2020 +0200
+
+    uudelleennimentä
+
+ eka.txt | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+commit baadb0f400dfd893aca3c6de2fc26839702560a7
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:50:35 2020 +0200
+
+    toinen delete
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 7c4edf0a473f0a6a46bb9b2f1d5655bcc7a7bc8b
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:45:21 2020 +0200
+
+    muutos lorem
+
+ tiedosto.txt | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 08b814c6d76d9e2c7c0f79d3cf9d55bd8f6ec4e9
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:43:40 2020 +0200
+
+    lorem ipsum
+
+ tiedosto.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+commit a8f5f45b36014d3240aa26a28653d47f09ec8627
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:03:52 2020 +0200
+
+    vihdoin toinen ja kolmas lisätty
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 5ec8b2dc69ee4c573744c6cd69d9e9dbf9f650a4
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:02:34 2020 +0200
+
+    uusi kansio
+
+ stuff/uusi.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 3468d581b9081f1d07917e51059d708b9c314fbf
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 17:00:27 2020 +0200
+
+    toinen ja kolmas muutos
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a66c0d037de48de9744e0a5d04313d515e63fb21
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 16:56:22 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 2b3afe9341b41d1855d877b934908589f7d507ce
+Author: Ilari Haho <ilari.haho@gmail.com>
+Date:   Tue Nov 3 16:53:46 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
