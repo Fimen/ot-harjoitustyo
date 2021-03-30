@@ -12,6 +12,8 @@ Kesytys kestää vain tietyn hetken jolloin tietoja tarvii, joten alustavasti ta
 
 Sovellus koostuu kolmesta eri näkymästä ainakin toistaiseksi kunnes paljastuu kuinka iso työmaa alustavassa versiossa on.
 
+<img src="https://raw.githubusercontent.com/Fimen/ot-harjoitustyo/master/dokumentaatio/kayttoliittymaluonnos.jpeg" width="750">
+
 ## Perusversion tarjoama toiminnallisuus
 
 ### Dinosauruksen valinta
