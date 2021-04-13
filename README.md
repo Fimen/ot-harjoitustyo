@@ -1,5 +1,5 @@
 # ARKavustaja
-Sovelluksen avulla käyttäjän on mahdollista nähdä todennäköisyydet tavoitetasojen saavuttamiseksi uutta dinosaurusta kesyttäessä ARK Survival Evolved pelissä.
+Sovelluksen avulla käyttäjän on mahdollista nähdä todennäköisyydet tavoitetasojen saavuttamiseksi uutta dinosaurusta kesytettäessä ARK Survival Evolved pelissä.
 
 ## Dokumentaatio
 
