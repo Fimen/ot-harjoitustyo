@@ -1,8 +1,8 @@
 # ARKavustaja
-*Kevät 2021*
+Sovelluksen avulla käyttäjän on mahdollista nähdä todennäköisyydet tavoitetasojen saavuttamiseksi uutta dinosaurusta kesyttäessä ARK Survival Evolved pelissä.
+
+## Dokumentaatio
 
 [tuntikirjanpito](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-[gitlog.txt](https://github.com/Fimen/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/Fimen/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[vaatimusmäärittely](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
