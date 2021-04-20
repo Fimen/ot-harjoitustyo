@@ -18,9 +18,9 @@ Sovellus koostuu kolmesta eri näkymästä ainakin toistaiseksi kunnes paljastuu
 
 ### Dinosauruksen valinta
 
-- käyttäjä valitsee haluamansa dinosauruksen valikosta. Alussa siellä on vain yksi laji
+- käyttäjä valitsee haluamansa dinosauruksen valikosta. Alussa siellä on vain yksi laji [OSITTAIN TEHTY, dinosauruksen tietojen lukeminen tiedostosta ja tallentaminen onnistuu.Ppyydän apua seuraavalla ohjaustunnilla javafx oikein näkymisen korjaamiseen]
 
-- valinnan jälkeen käyttäjä klikkaa "Tame" jolloin päästään tainnutusmetodin valintanäkymään
+- valinnan jälkeen käyttäjä klikkaa "Tame" jolloin päästään tainnutusmetodin valintanäkymään [OSITTAIN TEHTY]
 
 - käyttöliittymäkuvaan lisäyksenä käyttäjä asettaa pelaamansa serverin kertoimet kesytysnopeuksille
 
