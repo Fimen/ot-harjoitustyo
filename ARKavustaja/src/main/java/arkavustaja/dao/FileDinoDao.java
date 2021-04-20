@@ -44,19 +44,22 @@ public class FileDinoDao implements DinoDao {
         }
     }
     
-    private void save() throws Exception {
+    @Override
+    public void save() {
         try (FileWriter writer = new FileWriter(new File(file))) {
             for (Dino dino : dinos) {
                 String stats = "";
                 String increase = "";
                 List<Integer> baseStats = dino.getStats();
                 List<Double> statIncrease = dino.getIncrease();
-                for (int i = 0; i < 7; i++) {
+                for (int i = 0; i < 6; i++) {
                     stats += ";" + baseStats.get(i).toString();
                     increase += ";" + statIncrease.get(i).toString();
                 }
                 writer.write(dino.getName() + stats + increase + "\n");
             }
+        } catch (Exception e) {
+            System.out.println("Saving failed");
         }
     }
     

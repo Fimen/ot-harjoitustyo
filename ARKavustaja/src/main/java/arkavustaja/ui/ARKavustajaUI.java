@@ -7,10 +7,13 @@ package arkavustaja.ui;
 
 import arkavustaja.dao.DinoDao;
 import arkavustaja.dao.FileDinoDao;
+import arkavustaja.domain.Dino;
 import java.io.FileInputStream;
 import java.util.Properties;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -40,7 +43,7 @@ public class ARKavustajaUI extends Application {
         
         FileDinoDao dinoDao = new FileDinoDao(dinoFile);
         this.dinoDao = dinoDao;
-        
+        dinoDao.save();
     }
     
     @Override
@@ -61,6 +64,17 @@ public class ARKavustajaUI extends Application {
         ruudukko.add(dinos, 1, 1);
         ruudukko.add(tame, 1, 3);
         ruudukko.setPadding(new Insets(20, 20, 20, 20));
+        ComboBox combo = new ComboBox();
+        ObservableList<String> list = FXCollections.observableArrayList(dinoDao.getAll().stream().map(dino -> dino.toString()).toArray(String[]::new));
+        combo.setItems(list);
+        ruudukko.add(combo, 1, 2);
+        
+        tame.setOnAction(e -> {
+            System.out.println("tämä listaa ohjelman dinos.txt tiedostoon lisätyt dinosaurukset");
+            for (String s : list) {
+                System.out.println(s);
+            }
+        });
 
         asettelu.setPrefSize(500, 500);
         asettelu.setTop(ruudukko);

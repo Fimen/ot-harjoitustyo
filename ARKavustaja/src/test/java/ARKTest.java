@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+import arkavustaja.dao.DinoDao;
+import arkavustaja.dao.FileDinoDao;
 import arkavustaja.domain.Dino;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,5 +59,30 @@ public class ARKTest {
         Dino d = new Dino("Ankylo", new ArrayList<>(), new ArrayList<>());
         
         assertTrue(d.getName().equals("Ankylo"));
+    }
+    
+    @Test
+    public void AnkylosaurusIsReturnedOnGetAll() throws Exception {
+        FileDinoDao fileDinoDao = new FileDinoDao("dinos.txt");
+        DinoDao dinoDao = fileDinoDao;
+        assertTrue(dinoDao.getAll().get(0).getName().equals("Ankylosaurus"));
+    }
+    
+    @Test
+    public void saveSavesNewStats() throws Exception {
+        FileDinoDao fileDinoDao = new FileDinoDao("dinos.txt");
+        DinoDao dinoDao = fileDinoDao;
+        dinoDao.getAll().get(0).getStats().remove(5);
+        dinoDao.getAll().get(0).getStats().add(200);
+        dinoDao.save();
+        
+        FileDinoDao newFileDinoDao = new FileDinoDao("dinos.txt");
+        DinoDao newDinoDao = newFileDinoDao;
+        assertTrue(newDinoDao.getAll().get(0).getStats().get(5) == 200);
+        
+        //returning changed value back to 100
+        dinoDao.getAll().get(0).getStats().remove(5);
+        dinoDao.getAll().get(0).getStats().add(100);
+        dinoDao.save();
     }
 }
