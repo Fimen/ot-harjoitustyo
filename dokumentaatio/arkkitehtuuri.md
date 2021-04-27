@@ -21,6 +21,8 @@ Käyttöliittymä on pyritty eristämään sovelluslogiikasta. Ohjelman rakentee
 
 ## Sovelluslogiikka
 
+Vielä tällä hetkellä sovelluslogiikka toimii Dino-olioilla ja DinoDao rajapinnalla, joita hyödynnetään ohjelmaa käytettäessä. 
+
 <img src="https://raw.githubusercontent.com/Fimen/ot-harjoitustyo/master/dokumentaatio/image0.jpeg" width="150">
 
 Ohjelman osian suhdetta kuvaava luokka/pakkauskaavio:
