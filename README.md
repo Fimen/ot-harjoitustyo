@@ -10,3 +10,5 @@ Sovelluksen avulla käyttäjän on mahdollista nähdä todennäköisyydet tavoit
 [tuntikirjanpito](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 [vaatimusmäärittely](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[arkkitehtuuri](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
