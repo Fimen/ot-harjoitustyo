@@ -7,4 +7,5 @@
 | 13.4. | 8    | Ensimmäinen askel javaFX käyttöliittymän toimimiseen ja tiedostojen luomiseen |
 | 19.4. | 3    | JavaFX käyttöliittymän näkymisen korjausyritys |
 | 20.4. | 5    | Tiedostojen lukeminen ja kirjoitus onnistuu |
-| yht   | 25   | | 
+| 27.4. | 10   | JavaFX kaikki näkymät luotu onnistuneesti suurimmalta osin tarvittavien palikoiden ja toiminnallisuuksien osalta |
+| yht   | 35   | | 
