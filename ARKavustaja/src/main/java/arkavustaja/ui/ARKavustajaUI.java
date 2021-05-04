@@ -220,7 +220,7 @@ public class ARKavustajaUI extends Application {
                                 int currentPts = (int) currentDoublePts;
                                 int targetPts = (int) targetDoublePts;
 
-                                labels.get(i).setText("");
+                                labels.get(i).setText("Brain error, fixing soon");
                             } catch (Exception y) {
                                 labels.get(i).setText("- % " + strings.get(i));
                             }
