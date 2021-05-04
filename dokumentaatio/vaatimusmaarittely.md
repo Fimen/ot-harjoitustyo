@@ -18,33 +18,33 @@ Sovellus koostuu kolmesta eri näkymästä ainakin toistaiseksi kunnes paljastuu
 
 ### Dinosauruksen valinta
 
-- käyttäjä valitsee haluamansa dinosauruksen valikosta. Alussa siellä on vain yksi laji [OSITTAIN TEHTY, dinosauruksen tietojen lukeminen tiedostosta ja tallentaminen onnistuu.Ppyydän apua seuraavalla ohjaustunnilla javafx oikein näkymisen korjaamiseen]
+- käyttäjä valitsee haluamansa dinosauruksen valikosta. Alussa siellä on vain yksi laji [TEHTY]
 
-- valinnan jälkeen käyttäjä klikkaa "Tame" jolloin päästään tainnutusmetodin valintanäkymään [OSITTAIN TEHTY]
+- valinnan jälkeen käyttäjä klikkaa "Tame" jolloin päästään tainnutusmetodin valintanäkymään [TEHTY]
 
 - käyttöliittymäkuvaan lisäyksenä käyttäjä asettaa pelaamansa serverin kertoimet kesytysnopeuksille
 
 ### Tainnutusmetodin valinta
 
-- käyttäjä valitsee haluamansa aseen valikosta. Alustavasti kätettävissä on ainoastaan yhdenlainen tainnutusase
+- käyttäjä valitsee haluamansa aseen valikosta. Alustavasti kätettävissä on ainoastaan yhdenlainen tainnutusase [TEHTY]
 
 - käyttäjä muuttaa tarvittaessa aseen vahvuutta
 
-- käyttöliittymäkuvaan lisäyksenä käyttäjä asettaa kesytettävän dinosauruksen tason
-
 - käyttäjä näkee tarvittavat tiedot tainnutuksen suorittamiseen
 
-- käyttäjä voi klikata "Knocked out" ilmaistaakseen tainnutuksen onnistumisen ja päästäkseen Ominaisuusnäkymään
+- käyttäjä voi klikata "Knocked out" ilmaistaakseen tainnutuksen onnistumisen ja päästäkseen Ominaisuusnäkymään [TEHTY]
 
 ### Ominaisuusnäkymä
 
-- käyttäjä valitsee kesytyksessä käytettävän ruoan
+- käyttäjä valitsee kesytyksessä käytettävän ruoan [TEHTY]
 
-- käyttäjä asettaa kesytettävän dinosauruksen ominaisuuksien tasot
+- käyttöliittymäkuvaan lisäyksenä käyttäjä asettaa kesytettävän dinosauruksen tason [TEHTY]
 
-- käyttäjä asettaa haluamiinsa ominaisuuksiin tavoitetason
+- käyttäjä asettaa kesytettävän dinosauruksen ominaisuuksien tasot [TEHTY]
 
-- käyttäjä näkee kuinka todennäköistä on saavuttaa haluttu taso kesytyksen onnistuessa
+- käyttäjä asettaa haluamiinsa ominaisuuksiin tavoitetason [TEHTY]
+
+- käyttäjä näkee kuinka todennäköistä on saavuttaa haluttu taso kesytyksen onnistuessa [ONGELMIA]
 
 - käyttäjä voi poistua takaisin ensimmäisen valikkoon painamalla "Ready!"
 
