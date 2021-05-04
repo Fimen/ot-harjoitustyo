@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedosto [arkavustaja.jar](https://github.com/Fimen/ot-harjoitustyo/releases/tag/viikko6)
+Lataa tiedosto [ARKavustaja-viikko6.jar](https://github.com/Fimen/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Ohjelman käynnistäminen
 
