@@ -73,16 +73,16 @@ public class ARKTest {
         FileDinoDao fileDinoDao = new FileDinoDao("dinos.txt");
         DinoDao dinoDao = fileDinoDao;
         dinoDao.getAll().get(0).getStats().remove(5);
-        dinoDao.getAll().get(0).getStats().add(200);
+        dinoDao.getAll().get(0).getStats().add(200.0);
         dinoDao.save();
         
         FileDinoDao newFileDinoDao = new FileDinoDao("dinos.txt");
         DinoDao newDinoDao = newFileDinoDao;
-        assertTrue(newDinoDao.getAll().get(0).getStats().get(5) == 200);
+        assertTrue(newDinoDao.getAll().get(0).getStats().get(5) == 200.0);
         
         //returning changed value back to 100
         dinoDao.getAll().get(0).getStats().remove(5);
-        dinoDao.getAll().get(0).getStats().add(100);
+        dinoDao.getAll().get(0).getStats().add(100.0);
         dinoDao.save();
     }
 }

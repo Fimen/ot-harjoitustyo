@@ -26,12 +26,12 @@ public class FileDinoDao implements DinoDao {
         try {
             Scanner reader = new Scanner(new File(file));
             while (reader.hasNextLine()) {
-                List<Integer> baseStats = new ArrayList<>();
+                List<Double> baseStats = new ArrayList<>();
                 List<Double> statIncrease = new ArrayList<>();
                 String[] parts = reader.nextLine().split(";");
                 String name = parts[0];
                 for (int i = 1; i < 7; i++) {
-                    baseStats.add(Integer.parseInt(parts[i]));
+                    baseStats.add(Double.parseDouble(parts[i]));
                     statIncrease.add(Double.parseDouble(parts[i + 6]));
                 }
                 Dino dino = new Dino(name, baseStats, statIncrease);
@@ -50,7 +50,7 @@ public class FileDinoDao implements DinoDao {
             for (Dino dino : dinos) {
                 String stats = "";
                 String increase = "";
-                List<Integer> baseStats = dino.getStats();
+                List<Double> baseStats = dino.getStats();
                 List<Double> statIncrease = dino.getIncrease();
                 for (int i = 0; i < 6; i++) {
                     stats += ";" + baseStats.get(i).toString();
@@ -66,5 +66,15 @@ public class FileDinoDao implements DinoDao {
     @Override
     public List<Dino> getAll() {
         return this.dinos;
+    }
+    
+    @Override
+    public Dino getDino(String name) {
+        for (Dino d : this.dinos) {
+            if (d.getName().equals(name)) {
+                return d;
+            }
+        }
+        return null;
     }
 }

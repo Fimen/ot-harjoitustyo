@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pakkaus;
+package arkavustaja;
 
 import arkavustaja.ui.ARKavustajaUI;
 
@@ -11,7 +11,7 @@ import arkavustaja.ui.ARKavustajaUI;
  *
  * @author ihaho
  */
-public class Paaohjelma {
+public class Main {
     public static void main(String[] args) {
         ARKavustajaUI.main(args);
     }

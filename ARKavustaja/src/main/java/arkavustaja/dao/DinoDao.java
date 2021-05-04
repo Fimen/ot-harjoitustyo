@@ -15,4 +15,5 @@ import java.util.List;
 public interface DinoDao {
     List<Dino> getAll();
     void save();
+    Dino getDino(String name);
 }

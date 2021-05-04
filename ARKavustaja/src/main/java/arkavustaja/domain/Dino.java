@@ -14,16 +14,16 @@ import java.util.List;
  */
 public class Dino {
     private String name;
-    private List<Integer> baseStats;
+    private List<Double> baseStats;
     private List<Double> statIncrease;
     
-    public Dino(String name, List<Integer> baseStats, List<Double> statIncrease) {
+    public Dino(String name, List<Double> baseStats, List<Double> statIncrease) {
         this.name = name;
         this.baseStats = baseStats;
         this.statIncrease = statIncrease;
     }
     
-    public List<Integer> getStats() {
+    public List<Double> getStats() {
         return this.baseStats;
     }
     
