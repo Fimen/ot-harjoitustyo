@@ -6,9 +6,9 @@ Lataa tiedosto [ARKavustaja-viikko6.jar](https://github.com/Fimen/ot-harjoitusty
 
 Ohjelma käynnistetään komennolla 
 
-'''
+```
 mvn compile exec:java -Dexec.mainClass=arkavustaja.Main
-'''
+```
 
 tai netbeansista.
 
