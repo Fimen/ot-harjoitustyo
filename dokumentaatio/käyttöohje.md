@@ -4,7 +4,13 @@ Lataa tiedosto [ARKavustaja-viikko6.jar](https://github.com/Fimen/ot-harjoitusty
 
 ## Ohjelman käynnistäminen
 
-Ohjelma käynnistetään tällä hetkellä vielä netbeansista.
+Ohjelma käynnistetään komennolla 
+
+'''
+mvn compile exec:java -Dexec.mainClass=arkavustaja.Main
+'''
+
+tai netbeansista.
 
 ## Dinosauruksen ja tainnutusmetodin valitseminen
 
