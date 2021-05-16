@@ -6,6 +6,7 @@
 
 import arkavustaja.dao.DinoDao;
 import arkavustaja.dao.FileDinoDao;
+import arkavustaja.domain.Calc;
 import arkavustaja.domain.Dino;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,5 +85,17 @@ public class ARKTest {
         dinoDao.getAll().get(0).getStats().remove(5);
         dinoDao.getAll().get(0).getStats().add(100.0);
         dinoDao.save();
+    }
+    
+    @Test
+    public void calcWorks() {
+        // Calculates binomial probability. First parameter is number of total trials
+        // and second parameter is minimum number of successful events. Probability for
+        // successful event is 1/7 so here we calculate probability that at least 5
+        // successful events happen.
+        Calc calc = new Calc();
+        Double value = calc.probability(20, 5);
+        String s = String.format("%.2f", value);
+        assertTrue(s.equals("0.15"));
     }
 }

@@ -7,6 +7,7 @@ package arkavustaja.ui;
 
 import arkavustaja.dao.DinoDao;
 import arkavustaja.dao.FileDinoDao;
+import arkavustaja.domain.Calc;
 import arkavustaja.domain.Dino;
 import java.io.FileInputStream;
 import java.util.ArrayList;
@@ -39,6 +40,7 @@ import javafx.util.converter.DoubleStringConverter;
 public class ARKavustajaUI extends Application {
 
     private DinoDao dinoDao;
+    private Calc calc;
 
     private Scene dinoScene;
     private Scene knockScene;
@@ -53,6 +55,7 @@ public class ARKavustajaUI extends Application {
 
         FileDinoDao dinoDao = new FileDinoDao(dinoFile);
         this.dinoDao = dinoDao;
+        this.calc = new Calc();
         dinoDao.save();
     }
 
@@ -136,7 +139,7 @@ public class ARKavustajaUI extends Application {
         Label tamingFood = new Label("Choose taming food");
         Button calculate = new Button("Calculate");
         Label level = new Label("Wild dinosaur level");
-        TextField levelNumber = new TextField("150");
+        TextField levelNumber = new TextField("20");
         Label infoProb = new Label("");
         Label insert = new Label("Insert stats");
         Label target = new Label("Target stat");
@@ -153,12 +156,12 @@ public class ARKavustajaUI extends Application {
         TextField targetFood = new TextField("");
         TextField targetWeight = new TextField("");
         TextField targetMelee = new TextField("");
-        Label probHealth = new Label("- % Health");
-        Label probStamina = new Label("- % Stamina");
-        Label probOxygen = new Label("- % Oxygen");
-        Label probFood = new Label("- % Food");
-        Label probWeight = new Label("- % Weight");
-        Label probMelee = new Label("- % Melee");
+        Label probHealth = new Label("00.00 % Health");
+        Label probStamina = new Label("00.00 % Stamina");
+        Label probOxygen = new Label("00.00 % Oxygen");
+        Label probFood = new Label("00.00 % Food");
+        Label probWeight = new Label("00.00 % Weight");
+        Label probMelee = new Label("00.00 % Melee");
         ArrayList<TextField> textFields = new ArrayList<>();
         textFields.addAll(Arrays.asList(health, stamina, oxygen, food, weight, melee,
                 targetHealth, targetStamina, targetOxygen, targetFood, targetWeight, targetMelee));
@@ -213,16 +216,24 @@ public class ARKavustajaUI extends Application {
                     if (dino != null) {
                         List<Double> stats = dino.getStats();
                         List<Double> increase = dino.getIncrease();
+                        int levels = Integer.valueOf(levelNumber.getText()) / 2 - 1;
                         for (int i = 0; i < textFields.size() / 2; i++) {
                             try {
                                 double currentDoublePts = (Double.valueOf(textFields.get(i).getText()) - stats.get(i)) / increase.get(i);
                                 double targetDoublePts = (Double.valueOf(textFields.get(i + 6).getText()) - stats.get(i)) / increase.get(i);
                                 int currentPts = (int) currentDoublePts;
                                 int targetPts = (int) targetDoublePts;
-
-                                labels.get(i).setText("Brain error, fixing soon");
+                                if (targetPts > currentPts && targetPts - currentPts <= levels) {
+                                    double prob = 100 * calc.probability(levels, targetPts - currentPts);
+                                    String s = String.format("%.2f", prob);
+                                    s = s + " % " + strings.get(i);
+                                    labels.get(i).setText(s);
+                                } else {
+                                    infoProb.setText("Incorrect stats on row " + (i + 1));
+                                    labels.get(i).setText("00.00 % " + strings.get(i));
+                                }
                             } catch (Exception y) {
-                                labels.get(i).setText("- % " + strings.get(i));
+                                labels.get(i).setText("00.00 % " + strings.get(i));
                             }
                         }
                     } else {
