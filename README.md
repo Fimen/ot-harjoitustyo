@@ -14,3 +14,39 @@ Sovelluksen avulla käyttäjän on mahdollista nähdä todennäköisyydet tavoit
 [vaatimusmäärittely](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [arkkitehtuuri](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+[testausdokumentti](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+
+[käyttöohje](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/käyttöohje.md)
+
+## Komentorivitoiminnot
+
+### Testaus
+
+Testit suoritetaan komennolla
+
+```
+mvn test
+```
+
+Testikattavuusraportti luodaan komennolla
+
+```
+mvn jacoco:report
+```
+
+### Suoritettavan jarin generointi
+
+Komento
+
+```
+mvn package
+```
+
+### JavaDoc
+
+JavaDoc generoidaan komennolla
+
+```
+mvn javadoc:javadoc
+```
