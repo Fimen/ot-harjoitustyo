@@ -7,6 +7,8 @@ Sovelluksen avulla käyttäjän on mahdollista nähdä todennäköisyydet tavoit
 
 [Viikko 6](https://github.com/Fimen/ot-harjoitustyo/releases/tag/viikko6)
 
+[Viikko 7](https://github.com/Fimen/ot-harjoitustyo/releases/tag/viikko7)
+
 ## Dokumentaatio
 
 [tuntikirjanpito](https://github.com/Fimen/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
