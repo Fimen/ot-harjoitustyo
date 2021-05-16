@@ -10,4 +10,7 @@
 | 27.4. | 10   | JavaFX kaikki näkymät luotu onnistuneesti suurimmalta osin tarvittavien palikoiden ja toiminnallisuuksien osalta |
 | 3.5.  | 6    | Sovelluksen toiminnallisuus muuten valmis, paitsi todennäkisyyksien laskemisen kanssa numerot oliva liian suuria javalle |
 | 4.5.  | 8    | Matematiikkaongelma jatkuu, sekä JavaDocia en saanut jostain syystä luotua, taistelin näiden kanssa runsaasti |
-| yht   | 49   | | 
+| 14.5. | 4    | JavaDoc korjattu |
+| 15.5. | 4    | Todennäköisyyslaskentaa ja kaavoja opeteltu |
+| 16.5. | 8    | Todennäköisyydet toimivat nyt järkevästi ja oikein ohjelmassa. Ohjelman perustoiminnallisuus koodattu loppuun |
+| yht   | 65   | | 
