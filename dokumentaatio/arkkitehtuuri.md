@@ -21,7 +21,10 @@ Käyttöliittymä on pyritty eristämään sovelluslogiikasta. Ohjelman rakentee
 
 ## Sovelluslogiikka
 
-Tällä hetkellä sovelluslogiikka toimii Calc luokalla, Dino-olioilla ja DinoDao rajapinnalla, joita hyödynnetään ohjelmaa käytettäessä. 
+Tällä hetkellä sovelluslogiikka toimii Calc luokalla, Dino-olioilla ja DinoDao rajapinnalla, joCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.774 s
+[INFO] Finished at: 2021-05-16T23:37:56+03:0ita hyödynnetään ohjelmaa käytettäessä. 
 
 <img src="https://raw.githubusercontent.com/Fimen/ot-harjoitustyo/master/dokumentaatio/image0.jpeg" width="150">
 
@@ -41,7 +44,7 @@ Dinosaurusten tiedot on tallennettu tiedostoon dinos.txt seuraavassa muodossa:
 ```
 Ankylosaurus;700.0;175.0;150.0;3000.0;250.0;100.0;140.0;17.5;15.0;300.0;5.0;5.0
 ```
-Ensimmäisenä on siis nimi, 6 seuraavaa lukua ova dinosauruksen ominaisuuksien lähtötason numeroita ja 6 seuraavaa lukua ovat samojen ominaisuuksien aina yhdestä lisälevelistä saatu tason lisäys.
+Ensimmäisenä on siis nimi, 6 seuraavaa lukua ova dinosauruksen ominaisuuksien lähtötason numeroita ja 6 seuraavaa lukua ovat samojen ominaisuuksien aina yhdestä lisälevelistä saatu tason lisäys. Mallia voi katsoa [täältä](https://www.dododex.com/stat-calculator)
 
 ## Ohjelman heikkoudet
 
