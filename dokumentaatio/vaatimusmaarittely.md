@@ -44,7 +44,7 @@ Sovellus koostuu kolmesta eri näkymästä ainakin toistaiseksi kunnes paljastuu
 
 - käyttäjä asettaa haluamiinsa ominaisuuksiin tavoitetason [TEHTY]
 
-- käyttäjä näkee kuinka todennäköistä on saavuttaa haluttu taso kesytyksen onnistuessa [ONGELMIA]
+- käyttäjä näkee kuinka todennäköistä on saavuttaa haluttu taso kesytyksen onnistuessa [TEHTY]
 
 - käyttäjä voi poistua takaisin ensimmäisen valikkoon painamalla "Ready!"
 
